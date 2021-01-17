@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+@include font-face('icomoon', '../fonts/icomoon/fonts/icomoon', $ver: 'vfpkfs');
+
+  
+  .icon-arrow:before {
+    content: "\e900";
+  }
+  .icon-down:before {
+    content: "\e901";
+  }
+  .icon-fb:before {
+    content: "\e902";
+  }
+  .icon-search:before {
+    content: "\e903";
+  }
+  .icon-star:before {
+    content: "\e904";
+  }
+  .icon-tw:before {
+    content: "\e905";
+  }
+  .icon-yt:before {
+    content: "\e906";
+  }
+  

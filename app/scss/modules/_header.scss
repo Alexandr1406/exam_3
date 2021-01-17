@@ -1,0 +1,111 @@
+.header {
+    background: url(../images/header.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh; 
+    padding-bottom: 1px;    
+    
+
+    &__scroll {
+        background-color: #fff;
+        color: $black;
+    }
+    
+    &__menu {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        transition: all .3s;
+        color: #fff;        
+        padding-left: 60px;        
+        border-bottom: 1px solid rgba($color: #fff, $alpha: .4);
+    }
+
+    &__link {
+        padding: 30px 45px 35px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.96px;
+
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    
+    }
+
+    &__logo {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    &__nav {
+        padding: 35px 45px 30px 60px;
+        text-transform: uppercase;
+        border-left: 1px solid rgba($color: #fff, $alpha: .4);
+
+    }
+
+   
+    &__content {
+        padding-top: 300px; 
+        padding-left: 300px;       
+        color: $white;        
+    }
+
+    &__info {
+        padding: 0 260px;
+        text-align: right;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        font-size: 55px;
+        line-height: 75px;
+        letter-spacing: 15.4px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+    }
+
+    &__sub {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: right;
+        color: #f7f8f3;
+        letter-spacing: 6.72px;
+        margin-bottom: 55px;
+    }
+
+    &__btn {       
+        padding: 25px 100px 25px 40px;
+        border: 1px solid #fff;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        position: relative;
+        
+        
+
+        &::before {
+            @include pos($t: 38px, $r: 30px);
+            @include size(50px, 1px);
+            background-color: #fff;
+            content: '';
+        }
+    }
+
+    &__more {
+       color: #f7f8f3;
+       font-size: 18px;
+       font-weight: 300;
+       letter-spacing: 5.04px;
+       display: block;
+       margin-top: 40px;
+       margin-bottom: 260px;
+    }
+
+}

@@ -1,0 +1,23 @@
+.about {
+    background-color: #f7f8f3;
+    padding-top: 100px;
+    text-align: center;
+
+    &__logo {
+        position: relative;
+        margin-bottom: 120px;
+        
+
+        &--title {
+            @include pos($t: 40px, $l: 620px);
+            font-size: 24px;
+            letter-spacing: 4.8px;
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        &--logos {
+            @include pos($b: 35px, $l: 520px);
+        }
+    }
+}
